@@ -19,11 +19,10 @@ use cybertoken::Cybertoken;
 
 fn main() {
   let cybertoken = Cybertoken::new("zugriff");
-  let token = cybertoken.generate();
+  let token = cybertoken.generate_token();
 
-  println!("token"); // zugriff_2uiWaFKqkMD9CLdUqrYZd2BWYfj2gz806DP5P
+  println!("{}", token); // zugriff_2uiWaFKqkMD9CLdUqrYZd2BWYfj2gz806DP5P
 
-  println!("{}", cybertoken.is_token_strin("zugriff_icnocrRLDoZ3uCPosLA0277hQ58ob379X43U")
-  ); // true
+  println!("valid {}", cybertoken.is_token_string("zugriff_icnocrRLDoZ3uCPosLA0277hQ58ob379X43U")); // valid true
 }
 ```
