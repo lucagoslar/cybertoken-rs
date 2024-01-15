@@ -1,0 +1,18 @@
+[package]
+name = "cybertoken"
+authors = ["Luca Goslar <git@lucagoslar.de>"]
+version = "1.0.0"
+edition = "2021"
+license = "MIT OR Apache-2.0 OR EUPL-1.2"
+repository = "https://github.com/lucagoslar/cybertoken-rs"
+description = """
+A Rust implementation of the cybertoken, a token format inspired by the GitHub API token format.
+"""
+keywords = ["token", "api", "secret", "generator"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crc32fast = "1.3.2"
+base-x = "0.2.11"
+rand = "0.8.5"
